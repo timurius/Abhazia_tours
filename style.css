@@ -1,0 +1,184 @@
+body{
+	margin: 0px;
+	font-family: sans-serif;
+}
+h2{
+	font-size: 42px;
+}
+.header {
+	width: 100%;
+	background: url("./images/header.jpg");
+	padding: 250px 0px;
+	position: relative;
+}
+.header::after{
+	content: "";
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+}
+.header__title {
+	position: relative;
+	color: #fff;
+	z-index: 5;
+	text-align: center;
+	margin: auto;
+}
+.header__title h1{
+	font-size: 62px;
+}
+.header__title p{
+	font-size: 20px;
+}
+.statistics {
+	background: #FD4C5C;
+	width: 100%;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	padding: 40px 0px;
+}
+.statistics__item {
+	display: inline-flex;
+	width: 250px;
+	align-items: center;
+	margin: 0px 5% ;
+}
+.statistics_icon {
+	margin-right: 10px;
+}
+.statistics__content {
+
+}
+.statistics__content h3 {
+	margin: 0px;
+	margin-bottom: 10px;
+}
+.statistics__content p {
+	margin: 0px;
+}
+.attractions {
+	background: url("./images/background.png");
+	position: relative;
+	padding: 100px 0px;
+	color: #fff;
+}
+.attractions::after{
+	content: "";
+	z-index: 1;
+	background: rgba(25, 24, 48, 0.9);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+}
+.attractions *{
+	position: relative;
+	z-index: 3;
+}
+.attractions__text {
+	width: calc(90% - 40px);
+	margin: auto;
+	margin-bottom: 80px;
+}
+.attractions__text h2{
+	margin: 0px;
+	margin-bottom: 25px;
+}
+.attractions__items {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: auto;
+}
+.attractions__item {
+	flex: 1;
+	height: 350px;
+	border-radius: 30px;
+	margin: 0px 20px;
+	position: relative;
+	overflow: hidden;
+	transition: all .2s;
+}
+.attractions__item:nth-child(1) {
+	background: url("./images/sea.jpg") no-repeat;
+	background-size: cover;
+}
+.attractions__item:nth-child(2) {
+	background: url("./images/waterfall.jpg") no-repeat;
+	background-size: cover;
+}
+.attractions__item:nth-child(3) {
+	background: url("./images/mountains.png") no-repeat;
+	background-size: cover;
+}
+.attractions__item::after{
+	content: "";
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+}
+.attractions__item:hover{
+	transform: scale(1.05);
+}
+.attractions__item h2{
+	z-index: 3;
+	position: absolute;
+	bottom: 60px;
+	left: 30px;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	margin: 0px;
+}
+.info {
+	display: flex;
+	width: 95%;
+	margin: 120px auto;
+	position: relative;
+}
+.info::after{
+	content: "";
+	z-index: -1;
+	background: url("./images/background2.png") no-repeat;
+	background-position: top right;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	opacity: 1;
+	height: 150%;
+    transform: translateY(-20%) translateX(20%);
+}
+.info__text {
+	flex: 1;
+	padding-left: 5%;
+}
+.info__text p, .info__text h2{
+	width: 400px;
+}
+.info__text ul{
+	list-style-image: url("./images/icons/check.png");
+	padding: 20px;
+}
+.info__image-container {
+	flex: 1;
+}
+.info__image {
+	margin: auto;
+	width: 400px;
+	height: 500px;
+	border-radius: 200px;
+	border: solid white 30px;
+	overflow: hidden;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.info__image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
